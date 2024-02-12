@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./node_modules/html5-qrcode/html5-qrcode.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div id="scanner">
+        <p id="bip_txt">Modo de bipagem: <span id="bip_type">ENTRADA</span></p>
+        <button id="bip_btn" class="btn dft-transition">Alterar modo de bipagem</button>
+        <div id="reader"></div>
+        <!-- <button id="scan_btn" class="btn dft-transition">Scanear com câmera</button>
+        <input id="bip_input" type="text" placeholder="ID do participante"> -->
+        <p id="scanner_output"><b>Seu último registro vai aparecer aqui</b><br>Nada por enquanto 😊</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
