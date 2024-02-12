@@ -18,7 +18,7 @@ document.querySelector("#bip_btn").addEventListener("click", function changeBipT
 
 // QR code config
 const scanner = new Html5QrcodeScanner("reader", {
-    qrbox: {height: 250, width: 250},
+    qrbox: {height: 200, width: 200},
     rememberLastUsedCamera: true,
     fps: 1
 })
@@ -65,9 +65,3 @@ function postGoogleSheet(qrcode) {
         }
       )
 }
-
-
-
-// Google API:
-// https://script.google.com/macros/s/AKfycbw8hvvx9Gc6iLvKCU0uw8GNb0HDFaY4Gz7vbkQcXPZzymxNEdzCybx_rLxzQVHPv8AF/exec
-// AKfycbw8hvvx9Gc6iLvKCU0uw8GNb0HDFaY4Gz7vbkQcXPZzymxNEdzCybx_rLxzQVHPv8AF

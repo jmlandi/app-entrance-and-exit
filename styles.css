@@ -21,10 +21,12 @@ body {
 }
 
 #scanner {
+    width: 450px;
+    height: 550px;
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -68,4 +70,47 @@ body {
     font-weight: 900;
 }
 
+#scanner_output {
+    margin-top: -40px;
+}
+
+/*********** SCAN APP CONFIG ***************/
+
+#reader {
+    border: none !important;
+    width: 380px !important;
+}
+
+#reader__scan_region {
+    width: 380px !important;
+}
+
+video {
+    width: 380px !important;
+}
+
+#html5-qrcode-button-camera-stop, #html5-qrcode-button-camera-start {
+    content: "Parar câmera";
+    margin: 20px 0px;
+    padding: 5px;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    transition: .25s all ease-out;
+}
+
+#html5-qrcode-button-camera-stop:hover,  #html5-qrcode-button-camera-start:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: .25s all ease-out;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+    display: none !important;
+}
 
