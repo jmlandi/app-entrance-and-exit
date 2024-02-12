@@ -32,7 +32,7 @@ body {
     box-shadow: 5px 5px 4px #00000010;
 }
 
-#bip_txt, .btn, #bip_input, #scanner_output {
+#bip_txt, .btn, #bip_input {
     padding: 10px 20px;
     width: 300px;
     text-align: center;
@@ -69,7 +69,27 @@ body {
 }
 
 #scanner_output {
-    margin-top: -40px;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000c7;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output_message {
+    background-color: #ffffffef;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 4px #00000010;
+    text-align: center;
 }
 
 /*********** SCAN APP CONFIG ***************/
