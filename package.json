@@ -1,5 +1,5 @@
 {
-  "name": "entrance_and_exit_ruby",
+  "name": "etrance_and_exit",
   "version": "1.0.0",
   "description": "HTML, CSS e JS website that scan a QR Code and send the data to a Google Sheet",
   "main": "index.js",
