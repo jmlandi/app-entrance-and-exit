@@ -1,5 +1,5 @@
 # In And Out Service for Carmen Steffens Group
-HTML, CSS e JS (vanila) website that scan a QR Code and send the data to a Google Sheet to control in-and-out actions for a real event.
+This project is a website built using HTML, CSS, and Vanilla JS. It's designed to scan QR Codes and transmit the captured data directly to Google Sheets. The primary purpose of this tool is to manage entry and exit movements for a specific event, ensuring the process is both straightforward and tailored to the occasion's needs.
 
 ## 📲 Use Case
 
