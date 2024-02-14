@@ -1,7 +1,7 @@
 # In And Out Service for Carmen Steffens Group
 HTML, CSS e JS (vanila) website that scan a QR Code and send the data to a Google Sheet to control in-and-out actions for a real event.
 
-## ⚙️ Use Case
+## 📲 Use Case
 
 1. At the event entrance, an attendant will use the website's QR code scanner.
 
@@ -15,7 +15,7 @@ Below is a video demonstration detailing the process for those responsible for s
 ##
 ![WhatsApp Video 2024-02-12 at 12](https://github.com/jmlandi/in-and-out-CS/assets/98327875/01b14069-00b5-4aa1-ad29-3d9a6dd98721)
 
-## ⚙️ Google Sheet 
+## ⚙️ Google Sheet Endpoint
 
 Using Apps Script, this is the code that I used to receive the data from my web app:
 
