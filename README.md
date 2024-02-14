@@ -17,7 +17,7 @@ Below is a video demonstration detailing the process for those responsible for s
 
 ## ⚙️ Google Sheet Endpoint
 
-Using Apps Script, this is the code that I used to receive the data from my web app:
+Using `Apps Script` extension, this is the code that I used to receive the data from my web app:
 
 ```
 const DATA_ENTRY_SHEET_NAME = "Entrada e Saída";
