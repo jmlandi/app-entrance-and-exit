@@ -19,7 +19,8 @@ Below is a video demonstration detailing the process for those responsible for s
 
 Using Apps Script, this is the code that I used to receive the data from my web app:
 
-`const DATA_ENTRY_SHEET_NAME = "Entrada e Saída";
+```
+const DATA_ENTRY_SHEET_NAME = "Entrada e Saída";
 
 var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(DATA_ENTRY_SHEET_NAME);
 
@@ -44,4 +45,4 @@ function appendToGoogleSheet(data) {
   var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
   var rowData = headers.map(headerFld => data[headerFld]);
   sheet.appendRow(rowData);
-}`
+}```
