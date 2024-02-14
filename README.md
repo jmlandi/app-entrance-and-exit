@@ -12,6 +12,5 @@ HTML, CSS e JS (vanila) website that scan a QR Code and send the data to a Googl
 4. This information will be logged in the appropriate sheet within the spreadsheet and monitored by the event's organizing team.
 
 Below is a video demonstration detailing the process for those responsible for scanning the QR codes:
-<br>
-_
+##
 ![WhatsApp Video 2024-02-12 at 12](https://github.com/jmlandi/in-and-out-CS/assets/98327875/01b14069-00b5-4aa1-ad29-3d9a6dd98721)
