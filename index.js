@@ -10,6 +10,9 @@ document.querySelector("#bip_btn").addEventListener("click", function changeBipT
     if (bipType.innerHTML === "ENTRADA") {
         bipType.innerHTML = "SAÍDA"
         document.querySelector("body").style = "background-color: tomato"
+    } else if (bipType.innerHTML === "SAÍDA") {
+        bipType.innerHTML = "REFEITÓRIO"
+        document.querySelector("body").style = "background-color: #fdda4f"
     } else {
         bipType.innerHTML = "ENTRADA"
         document.querySelector("body").style = "background-color: #afff36"
