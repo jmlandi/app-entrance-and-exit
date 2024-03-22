@@ -42,14 +42,16 @@ function success(result) {
     result = result.split("&")
     const id = result[0]
     const name = result[1]
-    const store = result[2]
-    const cargo = result[3]
+    const storeId = result[2]
+    const storePerfil = result[3]
+    const cidade[4]
+    const cargo = result[5]
     const date = new Date
     const datetime = `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`
 
     // "POST" Google Sheet
     if (document.querySelector("#scanner_output").style.display === "none") {
-        const postData = `Data=${datetime}&Tipo=${bipType.innerHTML}&ID QR Code=${id}&Nome=${name}&Loja=${store}&Cargo=${cargo}`
+        const postData = `Data=${datetime}&Tipo=${bipType.innerHTML}&ID QR Code=${id}&Nome=${name}&Loja=${store}&Cidade=${cidade}&Cargo=${cargo}`
         console.log("Dados Enviados")
         postGoogleSheet(postData)
         
