@@ -44,7 +44,7 @@ function success(result) {
     const name = result[1]
     const storeId = result[2]
     const storePerfil = result[3]
-    const cidade[4]
+    const cidade = result[4]
     const cargo = result[5]
     const date = new Date
     const datetime = `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`
