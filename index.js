@@ -35,15 +35,15 @@ const scanner = new Html5QrcodeScanner("reader", {
 
 scanner.render(success, error)
 
-let lastData = ''
 function success(result) {
 
     // Data from URL
+    console.log(result)
     result = result.split("&")
     const id = result[0]
     const name = result[1]
     const storeId = result[2]
-    const storePerfil = result[3]
+    // const storePerfil = result[3]
     const cidade = result[4]
     const cargo = result[5]
     const date = new Date
@@ -51,7 +51,7 @@ function success(result) {
 
     // "POST" Google Sheet
     if (document.querySelector("#scanner_output").style.display === "none") {
-        const postData = `Data=${datetime}&Tipo=${bipType.innerHTML}&ID QR Code=${id}&Nome=${name}&Loja=${store}&Cidade=${cidade}&Cargo=${cargo}`
+        const postData = `Data=${datetime}&Tipo=${bipType.innerHTML}&ID QR Code=${id}&Nome=${name}&Loja=${storeId}&Cidade=${cidade}&Cargo=${cargo}`
         console.log("Dados Enviados")
         postGoogleSheet(postData)
         
