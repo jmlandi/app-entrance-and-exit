@@ -22,27 +22,27 @@ Using `Apps Script` extension, this is the code that I used to receive the data 
 ```
 const DATA_ENTRY_SHEET_NAME = "Entrada e Saída";
 
-var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(DATA_ENTRY_SHEET_NAME);
+let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(DATA_ENTRY_SHEET_NAME);
 
 const doPost = (request = {}) => {
   const { postData: { contents, type } = {} } = request;
-  var data = parseFormData(contents);
+  let data = parseFormData(contents);
   appendToGoogleSheet(data);
  return ContentService.createTextOutput(contents).setMimeType(ContentService.MimeType.JSON);
 };
 
-function parseFormData(postData) {
-  var data = [];
-  var parameters = postData.split('&');
+const parseFormData = (postData) => {
+  let data = [];
+  let parameters = postData.split('&');
   for (var i = 0; i < parameters.length; i++) {
-    var keyValue = parameters[i].split('=');
+    let keyValue = parameters[i].split('=');
     data[keyValue[0]] = decodeURIComponent(keyValue[1]);
   }
   return data;
 }
 
-function appendToGoogleSheet(data) {
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var rowData = headers.map(headerFld => data[headerFld]);
+const appendToGoogleSheet = (data) => {
+  let headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+  let rowData = headers.map(headerFld => data[headerFld]);
   sheet.appendRow(rowData);
 }```
